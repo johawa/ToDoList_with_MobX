@@ -1,5 +1,5 @@
 # ToDoList_with_Mobx
-## Quote taken from the offical Docs
+##Quote taken from the offical Docs
 
 MobX is not a state container
 People often use MobX as alternative for Redux. But please note that MobX is just a library to solve a technical problem and not an architecture or even state container in itself. In that sense the above examples are contrived and it is recommended to use proper engineering practices like encapsulating logic in methods, organize them in stores or controllers etc. Or, as somebody on HackerNews put it:

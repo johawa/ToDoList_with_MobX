@@ -6,7 +6,7 @@ People often use MobX as alternative for Redux. But please note that MobX is jus
 
 '“MobX, it's been mentioned elsewhere but I can't help but sing its praises. Writing in MobX means that using controllers/ dispatchers/ actions/ supervisors or another form of managing dataflow returns to being an architectural concern you can pattern to your application's needs, rather than being something that's required by default for anything more than a Todo app.”'
 
-# My quick overview over MobX
+# Quick overview over MobX
 
 1. `@observable` makes an object, array or variable in the array observable
 2. `@autorun` will inform whenever the State of the Store changes, message is avaidable even on the clientSide
@@ -15,14 +15,14 @@ People often use MobX as alternative for Redux. But please note that MobX is jus
    you directly access the State of your Store and change it with action
 
 ## Simple Setup
-Make sure we wrapp your Provider like Redux around your App Component !
+Make sure we wrap your Provider around your App Component (like in Redux) !
 
 ````javascript 
-import {Provider} from 'mobx-react'
-import { YourStore } from './store';
+import { Provider } from 'mobx-react'
+import { Store } from './store';
 
 const Root = (
-    <Provider Store={YourStore}>
+    <Provider Store={Store}>
         <App />
     </Provider>
 );
@@ -47,7 +47,7 @@ So now you are able to access the store values via props and you can also manipu
 
 You can also access Methods from inside your Store, wich change the store data, but don't forget to .bind(this)
 
-In our example we are doing a ToDo-App, each ToDO is a class like :
+In our example we are doing a ToDo-App, each ToDo is a class like :
 
 ```javascript
 class Todo {
@@ -95,5 +95,4 @@ Above you will Notice the Getter Keyword on the filteredTodos-Method
 
 ```
 
-```
 

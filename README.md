@@ -6,7 +6,7 @@ People often use MobX as alternative for Redux. But please note that MobX is jus
 
 '“MobX, it's been mentioned elsewhere but I can't help but sing its praises. Writing in MobX means that using controllers/ dispatchers/ actions/ supervisors or another form of managing dataflow returns to being an architectural concern you can pattern to your application's needs, rather than being something that's required by default for anything more than a Todo app.”'
 
-### Quick overview over MobX
+# Quick overview over MobX
 
 1. `@observable` makes an object, array or variable in the array observable
 2. `@autorun` will inform whenever the State of the Store changes, message is avaidable even on the clientSide
@@ -14,7 +14,7 @@ People often use MobX as alternative for Redux. But please note that MobX is jus
 4. `@action` nothing like in `Redux` there are no Actions, Reducers or Dispatchers, and you dont have to worry about Immutability
    you directly access the State of your Store and change it with action
 
-#Simple Setup
+## Simple Setup
 Make sure we wrapp your Provider like Redux around your App Component !
 
 ````javascript 
@@ -73,7 +73,7 @@ class Store {
 }
 ```
 
-#More on Computed-Values
+## More on Computed-Values
 
 This is an Example of how you can use a Computed Value
 

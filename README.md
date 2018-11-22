@@ -7,7 +7,7 @@ People often use MobX as alternative for Redux. But please note that MobX is jus
 '“MobX, it's been mentioned elsewhere but I can't help but sing its praises. Writing in MobX means that using controllers/ dispatchers/ actions/ supervisors or another form of managing dataflow returns to being an architectural concern you can pattern to your application's needs, rather than being something that's required by default for anything more than a Todo app.”'
 
 # Quick overview over MobX
-## ! Using Decorators needs add the [babel-plugin-transform-decorators-legacy]('https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy') !
+## ! Using Decorators needs add of the [babel-plugin-transform-decorators-legacy]('https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy') !
 1. `@observable` makes an object, array or variable in the array observable
 2. `@autorun` will inform whenever the State of the Store changes, message is avaidable even on the clientSide
 3. `@computed` computed values are like formulas in spreadsheets (the sum of CellA and CellB), they just fire whenever they need to fire

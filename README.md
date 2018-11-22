@@ -13,6 +13,7 @@ People often use MobX as alternative for Redux. But please note that MobX is jus
 3. `@computed` computed values are like formulas in spreadsheets (the sum of CellA and CellB), they just fire whenever they need to fire
 4. `@action` nothing like in `Redux` there are no Actions, Reducers or Dispatchers, and you dont have to worry about Immutability
    you directly access the State of your Store and change it with action
+5. `@inject`Higher order component and counterpart of Provider. Can be used to pick stores from React's context and pass it as props to the target component. Usage:
 
 ## Simple Setup
 Make sure we wrap your Provider around your App Component (like in Redux) !
@@ -29,6 +30,14 @@ const Root = (
 
 ///Then render the 'Root' to your DOM
 ````
+You can also inject a specific Store to your App or to a Component via inject:
+
+````javascript 
+@inject("store1", "store2") @observer MyComponent
+````
+
+Make sure you use the right String for your Store
+
 Import store from your Store and pass it as a prop to your Component,like `<YourComponent store={store} />`
 now you can decorate your `YourComponent Class` with the observable decorator like this:
 
@@ -95,4 +104,4 @@ Above you will Notice the Getter Keyword on the filteredTodos-Method
 
 ```
 
-
+```
